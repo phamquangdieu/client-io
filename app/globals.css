@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.mess-container {
+  height: 600px;
+  width: 360px;
+}
+
+.left-mess {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+}
+
+.left-mess > div {
+  color: #3b3b3b;
+  padding: 8px;
+  max-width: 240px;
+  word-break: normal;
+  border: 1px solid #e6e6e6;
+  border-radius: 10px 10px 10px 0;
+}
+
+.right-mess {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.right-mess > div {
+  color: #f6f6f6;
+  padding: 8px;
+  max-width: 240px;
+  word-break: normal;
+  border: 1px solid #e6e6e6;
+  border-radius: 10px 10px 0px 10px;
+  background-color: #3b3b3b;
+}
+
+.input-mess {
+  outline: none;
+  padding: 8px;
+  font-size: 16px;
+  border: none;
+  border-radius: 20px;
+  width: 100%;
+}
+
+.button-mess {
+  padding: 8px;
+}
+
+.divider {
+  width: 2px;
+  height: 24px;
+  border: 1px solid #b5b5b5
+}
+
+
+.caro-item {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+}
+
+.item-green {
+  color: white;
+  background-color: green;
+}
